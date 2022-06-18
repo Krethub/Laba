@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root[theme='dark'] {
+    --bs-body-color: #f2f2f2;
+    --bs-white-rgb: 20, 20, 20;
+    --bs-body-bg: #171717;
+    --bs-border-color: #333333;
+}
+
+:root[theme='dark'] .navbar {
+    --bs-navbar-active-color: rgba(255, 255, 255, 0.9);
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.7);
+}
+
+:root[theme='dark'] .card {
+    --bs-card-bg: #111111;
+}
+
+:root[theme='dark'] .form-control {
+    background-color: #171717;
+    color: #fff;
+    border-color: #444444;
+}
+
+:root[theme='dark'] .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+img {
+    object-fit: cover;
+}
+
+.productCard {
+    min-width: 100%;
+}
+
+.productCard:hover {
+    cursor: pointer;
+}
+
+.productPage-img {
+    height: 260px;
+    flex-grow: 1;
+    min-width: 100%;
+    align-self: stretch;
+}
+
+.productPage-info {
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.authCard {
+    width: 100%;
+    max-width: 500px;
+}
+
+.addProduct-form {
+    align-self: stretch;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.addProduct-preview {
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.reportCell:hover {
+    cursor: pointer;
+    color: var(--bs-blue);
+}
+
+.discountBadge {
+    position: absolute;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: var(--bs-blue);
+    color: #ffffff;
+    bottom: 8px;
+    left: 8px;
+}
+
+@media (min-width: 576px) {
+    .productCard {
+        min-width: calc(100% / 2);
+        max-width: calc(100% / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .productCard {
+        min-width: calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .productPage-img {
+        min-width: 1px;
+        height: 440px;
+    }
+}
+
+@media (min-width: 992px) {
+    .productCard {
+        min-width: calc(100% / 4);
+        max-width: calc(100% / 4);
+    }
+}
+
+@media (min-width: 1200px) {
+    .productCard {
+        min-width: calc(100% / 5);
+        max-width: calc(100% / 5);
+    }
+}
